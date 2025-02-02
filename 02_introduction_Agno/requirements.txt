@@ -2,3 +2,6 @@ agno
 python-dotenv
 groq
 duckduckgo-search
+streamlit
+googlesearch-python
+youtube_transcript_api
