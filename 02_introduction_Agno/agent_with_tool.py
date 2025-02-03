@@ -1,5 +1,5 @@
-from agno.agent import Agent
-from agno.models.groq import Groq 
+from agno.agent.agent import Agent
+from agno.models.groq.groq import Groq 
 import os
 from dotenv import load_dotenv
 from agno.tools.duckduckgo import DuckDuckGoTools
@@ -7,7 +7,11 @@ from agno.tools.googlesearch import GoogleSearch
 load_dotenv()
 # 
 # os.environ["GROQ_DEEPSEEK_API"] = os.getenv("GROQ_DEEPSEEK_API")
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
+groq_api_key = os.getenv("GROQ_API_KEY")
+if groq_api_key:
+    os.environ["GROQ_API_KEY"] = groq_api_key
+else:
+    raise ValueError("GROQ_API_KEY is not set in the environment variables")
 
 def createAgent():
     return Agent(

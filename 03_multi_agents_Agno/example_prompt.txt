@@ -1,0 +1,5 @@
+ 1. ---> "Analyze NVIDIA's financial performance, focusing on revenue growth from GPUs and AI technologies, as well as future projections in gaming and data centers."  
+
+ 2. ---> "Highlight Microsoft's financial success, including cloud revenue from Azure and enterprise software adoption, while addressing risks like market competition."  
+
+ 3. ---> "Evaluate Tesla's financial health, covering EV production costs, market share, and the impact of sustainability initiatives on long-term growth."
